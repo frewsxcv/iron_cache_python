@@ -6,7 +6,7 @@ except:
     import simplejson as json
 
 
-class Item:
+class Item(object):
     cache = None
     key = None
     value = None
@@ -44,7 +44,7 @@ class Item:
                 self.value = values["value"]
 
 
-class IronCache:
+class IronCache(object):
     NAME = "iron_cache_python"
     VERSION = "0.2.0"
     client = None
